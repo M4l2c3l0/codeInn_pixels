@@ -1,0 +1,158 @@
+#blog-container {
+  background-color: #f5f5f5;
+  font-size: 0;
+}
+
+section, .side-bar {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: auto;
+}
+
+.side-bar, section {
+  height: 720px;
+}
+
+.side-bar {
+  width: 15%;
+  height: 720px;
+  background-color: #eee;
+}
+
+.art-imgs {
+  margin: 10px auto;
+  width: 90%;
+  height: 150px;
+  background-color: #84bef4;
+  cursor: pointer;
+}
+
+.art-imgs h4 {
+  margin: 0;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #fff;
+  background-color: #84bef4;
+}
+
+.art-imgs img {
+  margin: auto;
+  padding-top: 12px;
+  height: 60px;
+}
+
+.art-imgs p {
+  padding: 15px 15px 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #bbb;
+  display: none;
+}
+
+section {
+  width: 65%;
+  background-color: #fff;
+}
+
+article h1 {
+  padding: 15px 0;
+  font-size: 35px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #84bef4;
+}
+
+#article-content {
+  padding: 50px 100px 30px;
+}
+
+article h2 {
+  margin: 50px 0 25px 0;
+  border-bottom: 1px solid #84bef4;
+  line-height: 28px;
+  font-size: 25px;
+  font-weight: 400;
+  color: #84bef4;
+}
+
+article img, article table {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+article img {
+  width: 85px;
+  height: 85px;
+}
+
+td {
+  padding-left: 20px;
+  font-size: 16px;
+  text-align: left;
+  line-height: 16px;
+}
+
+td span {
+  color: #aaa;
+}
+
+a {
+  color: #84bef4;
+}
+
+article p {
+  padding: 20px 0;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 25px
+}
+
+i {
+  font-size: 1em;
+  color: #888;
+  font-weight: 300;
+}
+
+
+
+/*---------- EDITORS LIST ----------*/
+
+
+
+ul {
+  text-align: left;
+}
+
+li {
+  padding: 10px 0 40px;
+}
+
+li h3, li p {
+  line-height: 20px;
+}
+
+li h3 {
+  padding-bottom: 5px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #aaa;
+}
+
+li img, li p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+li img {
+  width: 80px;
+  height: 80px;
+}
+
+li p {
+  padding: 0;
+  width: 85%;
+  font-size: 18px;
+  float: right;
+}

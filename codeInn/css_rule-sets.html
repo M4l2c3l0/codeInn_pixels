@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS - Rule Sets</title>
+    <link rel="icon" 
+          href="../images/cip_favicon.gif" 
+          type="image/gif">
+    <link rel="stylesheet"
+          href="../css/header.css">
+    <link rel="stylesheet" 
+          href="../css/main.css">
+    <link rel="stylesheet"
+          href="../css/css_section.css">
+    <link rel="stylesheet"
+          href="../css/footer.css">
+    <link media="only screen 
+                 and (max-device-width: 667px)"
+          rel="stylesheet"
+          href="../css/iphone.css">
+    <link media="only screen 
+                 and (min-device-width: 668px)
+                 and (max-device-width: 1024px)"
+          rel="stylesheet"
+          href="../css/ipad.css">
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="../index.html">
+          <img src="../images/cip-rgb_s.png"
+               alt="Codeinnpixels small logo">
+        </a>
+        <a href="../blog-spot/text-editors.html">
+          <button>blog-spot</button>
+        </a>
+      </div>
+    </header>
+   
+    <div id="grey-window">
+      <div id="buttons-menu-container">
+        <img src="../images/new_window_buttons.png"
+             id="window_buttons">
+        <ul class="css_selection-bar">
+          <a href="css_start.html">
+            <li>CSS</li>
+          </a>
+          <a href="css_introduction.html">
+            <li>Introduction</li>
+          </a>
+          <a href="css_html+css.html">
+            <li>HTML + CSS</li>
+          </a>
+          <a href="css_rule-sets.html">
+            <li id="current-selection">Rule Sets</li>
+          </a>
+          <a href="css_declarations.html">
+            <li>Declarations</li>
+          </a>
+          <a href="css_box-model.html">
+            <li>Box Model</li>
+          </a>
+        </ul>
+      </div>
+      <div id="canvas-container">
+        <h1>CSS/ Rule Sets</h1>
+        <article id="css_article-canvas">
+          <h2>Rule Sets</h2>
+          <p>
+            The main purpose of CSS is basically to target specific HTML elements and apply some make-up to them in two steps: by selecting them, and then modify the disired properties.<br>
+            As we are about to see in more detail, the combination forms a CSS <q>rule set</q>, and there can be as many as you wish in a CSS stylesheet document.<br>
+            It is for this reason that it is good practise to keep your CSS code organized and tidy from the start, by leaving for example separation lines between rule sets, writing them over multiple lines instead of a single one, and break each new declaration to the following line.<br>
+            To get a better visual of it, let's take a look at a CSS rule set, its different parts, and understand how to present it following the best practises above.
+          </p>
+          <h2>Syntax</h2>
+          <div class="code_sample">
+            <img id="img_sample"
+                 src="../images/css_rule-set.png"
+                 alt="Overview of a CSS rule-set"
+                 style="width: 100%">
+          </div>
+          <p>
+            Each rule set starts by targetting one or multiple elements via the <q>selectors</q>, and is then followed by the <q>declaration block</q>, containing all the styling <q>declarations</q> wrapped in-between two curly braces <code>{}</code>.<br>
+            Although the above is on a single line, it is good practise to write it on multiple lines, increasing its visibility and facilitating any error handling that may be required:<br>
+            <code>
+              h1, p {<br>
+              &nbsp;&nbsp;font-size: 14px;<br>
+              &nbsp;&nbsp;color: black;<br>
+              }
+            </code><br>
+            <i>(both are correct, but the multi-line version is much cleaner and easier on the eye)</i><br><br>
+            So let's now dive into its syntax in more details starting, from left to right, by the selectors.<br>
+            As we have already seen, we can select elements by their type, and any style declaration defined will be applied to all elements of that/those type(s). But as you are now about to learn, there are several other selectors that can be used and offering you better control over your selection.
+          </p>
+          <h2>Pick Me .Me #Me</h2>
+          <table>
+            <tr>
+              <td>type</td>
+              <td>
+                the usage of the element's type as selectors is simple and broad, applying any changes to all elements of the chosen type(s). A commacan be placed between multiple and different types, allowing you to select all elements of those types:<br>
+                <code>h1, h2, p</code><br>
+                <i>(targets all h1, h2 and p elements)</i>
+              </td>
+            </tr>
+            <tr>
+              <td>.class</td>
+              <td>
+                when targetting multiple items (not necessarely of the same type, and not necessarely all of a particular type), a class attribute may be given to the desired ones, and its name (value given to the class attribute) used as a selector, by simply placing a dot before its name:<br>
+                <code>.className</code><br>
+                <i>(targets all elements with that class name)</i>
+              </td>
+            </tr>
+            <tr>
+              <td>#id</td>
+              <td>
+                an item can be singled out by givin an id attribute to it and use that with a hashtag <code>#</code> before its name.<br>
+                Remember that an id must remain unique within an HTML document:<br>
+                <code>#idName</code><br>
+                <i>(singles-out element with unique id)</i>
+              </td>
+            </tr>
+            <tr>
+              <td>nesting flow</td>
+              <td>
+                by removing the comma for example between several elements (say <code>div</code> and <code>p</code>), we can take advantage of the elements nesting levels, which from left to right reads as parent to child, baring in mind that the one on the far right is the target:<br>
+                <code>div p</code><br>
+                <i>(targets all paragraphs inside all div containers)</i>
+              </td>
+            </tr>
+          </table>
+          
+          <div id="css_page-menu">
+            <a href="css_html+css.html">
+              <img id="arrow-left" src="../images/arrow-left_blue.png">
+            </a>
+            <a href="css_start.html">
+              <img id="menu-burger" src="../images/menu-burger_blue.png">
+            </a>
+            <a href="css_declarations.html">
+              <img id="arrow-right" src="../images/arrow-right_blue.png">
+            </a>
+          </div>  
+        </article>
+      </div>
+    </div>
+    
+    <footer>
+        <a href="../index.html">
+          <img id="footer-logo" 
+               src="../images/cip-footer_gray.png" 
+               alt="codeInnpixels footer logo">
+        </a>
+        <p>&copy; codeinnpixels 2016</p>
+    </footer>
+    
+    <script src="../js/jquery-2.2.3.min.js"></script>
+    <script src="../js/article_page-menu.js"></script>
+    <script src="../js/inn-footer.js"></script>
+  </body>
+</html>

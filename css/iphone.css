@@ -1,0 +1,265 @@
+@media screen 
+  and (orientation : landscape) {
+    header {
+      height: 65px;
+    }
+    
+    header div {
+      padding-top: 5px;
+    }
+    
+    header div button {
+      margin-top: 13px;
+      width: 120px;
+      height: 30px;
+      font-size: 1em;
+    }
+    
+    #main-container {
+      padding: 55px 0 65px;
+    }
+    
+    #main-container img {
+      margin: 0 auto;
+      width: 80%;
+      max-width: 400px;
+    }
+    
+    #main-container p {
+      font-size: 1.4em;
+    }
+    
+    #main-container button {
+      width: 190px;
+      height: 40px;
+      font-size: 1.4em;
+    }
+    
+    .description-points {
+      margin: 2px;
+      width: 200px;
+      display: inline-block;
+    }
+    
+    .description-points h2 {
+      font-size: 17px;
+    }
+}
+
+@media screen 
+  and (orientation : portrait) {
+    header {
+      height: 220px;
+    }
+    
+    header div {
+      padding-top: 60px;
+    }
+    
+    header div img {
+      height: 90px;
+    }
+    
+    header div button {
+      margin-top: 15px;
+      width: 200px;
+      height: 70px;
+      font-size: 2em;
+    }
+    
+    #main-container {
+      padding: 100px 20px 320px;
+    }
+    
+    #main-container img {
+      margin: 200px auto 100px;
+      width: 90%;
+      max-width: 750px;
+    }
+    
+    #main-container h1, #second-container h1 {
+      font-size: 1.1em;
+    }
+    
+    #main-container p {
+      font-size: 1.4em;
+    }
+    
+    #main-container button {
+      margin: 120px 0 0;
+      width: 400px;
+      height: 90px;
+      font-size: 2.8em;
+    }
+    
+    #second-container {
+      padding: 100px 0;
+    }
+    
+    .description-points {
+      margin: 5px auto;
+      width: 500px;
+      display: block;
+    }
+    
+    .description-points h2 {
+      font-size: 2.5em;
+    }
+    
+    .description-points p {
+      font-size: 2em;
+    }
+    
+    .notice {
+      font-size: 8px;
+    }
+    
+    footer {
+      padding: 50px 0;
+    }
+    
+    footer img {
+      height: 80px;
+    }
+    
+    footer p {
+      font-size: 1.8em;
+    }
+    
+    /*---------- HTML ----------*/
+    
+    .html_selection-bar {
+      height: 1420px;
+    }
+    
+    .html_selection-bar li {
+      height: 20px;
+      padding-top: 15px;
+      font-size: 1em;
+    }
+    
+    #html_start-canvas, 
+    #html_article-canvas {
+      height: 1440px;
+    }
+    
+    .start-border {
+      margin: 400px auto 0;
+    }
+    
+    #html_start-canvas-title {
+      padding: 80px 0 0 20px;
+      font-size: 15em;
+    }
+    
+    #html_start-canvas p {
+      font-size: 1.7em;
+      line-height: 25px;
+    }
+    
+    #html_start-canvas button {
+      width: 200px;
+      height: 45px;
+      font-size: 1.7em;
+    }
+    
+    #html_article-canvas p, #html_article-canvas table {
+      font-size: 1em;
+    }
+    
+    #modal-background {
+      padding: 800px 0 0 60px;
+    }
+    
+    .modal-window {
+      width: 680px;
+    }
+    
+    .modal-window div {
+      position: relative;
+      top: -1px;
+    }
+    
+    /*---------- CSS-SECTION ----------*/
+    
+    .css_selection-bar {
+      height: 1300px;
+    }
+    
+    .css_selection-bar li {
+      width: 95px;
+      height: 20px;
+      padding-top: 8px;
+      padding-bottom: 7px;
+      font-size: 1em;
+    }
+    
+    #css_start-canvas, 
+    #css_article-canvas {
+      height: 1460px;
+    }
+    
+    #css_start-canvas img {
+      padding-top: 20px;
+      width: 500px;
+    }
+    
+    #css_start-canvas p {
+      font-size: 1.7em;
+      line-height: 25px;
+    }
+    
+    #css_start-canvas button {
+      width: 200px;
+      height: 45px;
+      font-size: 1.7em;
+    }
+    
+    #css_article-canvas p {
+      font-size: 1em;
+      line-height: 25px;
+      -webkit-column-count: 1; /* Chrome, Safari, Opera */
+      -moz-column-count: 1; /* Firefox */
+      column-count: 1;
+    }
+    
+    /*---------- BLOG-SPOT ----------*/
+    
+    .side-bar, section {
+      height: 1520px;
+    }
+    
+    .side-bar {
+      width: 25%;
+    }
+    
+    section {
+      width: 75%;
+    }
+    
+    .art-imgs h4 {
+      font-size: 20px;
+    }
+    
+    .art-imgs p {
+      font-size: 18px;
+      line-height: 17px;
+    }
+    
+    article h1 {
+      padding: 20px;
+      font-size: 40px;
+    }
+    
+    article p {
+      font-size: 14px;
+    }
+    
+    #article-content {
+      padding: 50px 30px 80px;
+    }
+    
+    li {
+      padding: 20px 0 70px;
+    }
+}

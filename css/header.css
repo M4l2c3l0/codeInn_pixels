@@ -1,0 +1,36 @@
+header {
+  height: 80px;
+  background-color: #e1e1e1;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+header div {
+  margin: 0 auto;
+  padding-top: 10px;
+  width: 70%;
+}
+
+header div img {
+  padding-top: 7px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 45px;
+  float: left;
+}
+
+header button {
+  margin-top: 12px;
+  width: 150px;
+  height: 35px;
+  background-color: transparent;
+  border: 2px solid #84bef4;
+  font: 1.2em Avenir Next, Avenir, Arial, sans-serif;
+  font-weight: 500;
+  color: #84bef4;
+  float: right;
+}
+
+header button:hover {
+  background-color: #84bef4;
+  color: #e1e1e1;
+}

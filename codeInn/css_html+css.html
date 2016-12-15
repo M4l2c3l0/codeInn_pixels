@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS - HTML + CSS</title>
+    <link rel="icon" 
+          href="../images/cip_favicon.gif" 
+          type="image/gif">
+    <link rel="stylesheet"
+          href="../css/header.css">
+    <link rel="stylesheet" 
+          href="../css/main.css">
+    <link rel="stylesheet"
+          href="../css/css_section.css">
+    <link rel="stylesheet"
+          href="../css/footer.css">
+    <link media="only screen 
+                 and (max-device-width: 667px)"
+          rel="stylesheet"
+          href="../css/iphone.css">
+    <link media="only screen 
+                 and (min-device-width: 668px)
+                 and (max-device-width: 1024px)"
+          rel="stylesheet"
+          href="../css/ipad.css">
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="../index.html">
+          <img src="../images/cip-rgb_s.png"
+               alt="Codeinnpixels small logo">
+        </a>
+        <a href="../blog-spot/text-editors.html">
+          <button>blog-spot</button>
+        </a>
+      </div>
+    </header>
+   
+    <div id="grey-window">
+      <div id="buttons-menu-container">
+        <img src="../images/new_window_buttons.png"
+             id="window_buttons">
+        <ul class="css_selection-bar">
+          <a href="css_start.html">
+            <li>CSS</li>
+          </a>
+          <a href="css_introduction.html">
+            <li>Introduction</li>
+          </a>
+          <a href="css_html+css.html">
+            <li id="current-selection">HTML + CSS</li>
+          </a>
+          <a href="css_rule-sets.html">
+            <li>Rule Sets</li>
+          </a>
+          <a href="css_declarations.html">
+            <li>Declarations</li>
+          </a>
+          <a href="css_box-model.html">
+            <li>Box Model</li>
+          </a>
+        </ul>
+      </div>
+      <div id="canvas-container">
+        <h1>CSS/ HTML + CSS</h1>
+        <article id="css_article-canvas">
+          <h2>HTML + CSS</h2>
+          <p>
+            Although it seems that two decades ago HTML was rather independent (it was in fact common for websites throughout the 90s to be designed purely by using HTML alone), today's web design standards certainly strengthened its dependency on CSS to deal with that matter, so much so that HTML itself evolved accordingly, adapting and even removing several of its styling tags.
+          </p>
+          <h2>Pimp My HTML</h2>
+          <div class="code_sample" style="text-align:left;">
+            <code>
+              &lt;!doctype html&gt;<br>
+              &lt;html&gt;<br>
+              &nbsp;&nbsp;&lt;head&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;<br>
+              <span style="color: #5cbc6f;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h1, p {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;colour: green;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 14px;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;<br>
+              </span>
+              &nbsp;&nbsp;&lt;/head&gt;<br>
+              &nbsp;&nbsp;&lt;body&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Big Heading&lt;/h1&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+              &nbsp;&nbsp;&lt;/body&gt;<br>
+              &lt;/html&gt;
+            </code>
+          </div>
+          <p>
+            Here we have an example of what is called <q>internal</q> CSS, which consists of placing the CSS code inside of the head section in the HTML document, contained by a pair of two <code>&lt;style&gt;</code> tags.<br>
+            Just like the <code>&lt;html&gt;</code> tags used before, HTML uses the <code>&lt;style&gt;</code> ones to inform the browser that anything in between is written in CSS.<br>
+            So is this the only method to provide some CSS into an HTML document?<br>
+            There are  as you are about to see different ways to do so, all with their pros and cons, and although one may be more efficient than others depending on each particular case, the choice is ultimately defined by our personal style and preferences.
+          </p>
+          <h2>Implement CSS</h2>
+          <table>
+            <tr>
+              <td>
+                Inline
+              </td>
+              <td>
+                CSS can be placed at the core of an element to target it alone, by placing its declarations within the element's opening tag as part of the <code>style</code> attribute. Just like for any attribute's value(s), these declarations will be wrapped by two single or double quotes, and separated from each other by at least one whitespace:<br>
+                <code>&lt;h1 style="colour:gray; font-size:18px;"&gt;</code><br>
+                <i>(defines colour and size of heading)</i>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Internal
+              </td>
+              <td>
+                the CSS code can also be placed within the head section of the HTML document, and can therefore style any element within the documents:<br>
+                <i>(method used for the example above)</i>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>.css</code> linked file
+              </td>
+              <td>
+                a separated CSS <q>stylesheet</q> can be created and saved with the <code>.css</code> extention. To connect it to an HTML document, a <code>&lt;link&gt;</code> tag must be placed in the head section. This tag must also contain the <code>rel</code> attribute specifying the document's relation (<code>stylesheet</code> for CSS), and the <code>href</code> one to indicate its directory.<br>
+                This is great for bigger websites with multiple pages, as all can linked and therefore commonly affected by the same style declarations defined in a single CSS stylesheet.<br>
+                <u>Note & remember</u>: all of a website's documents must be inside the same folder, referred to as the <q>root folder</q>. If not, the HTML document will simply not be able to follow the provided directory:<br>
+                <code>&lt;link rel="stylesheet" href="style.css"&gt;</code><br>
+                <i>(links to a target of type stylesheet, and provides its directory)</i>
+              </td>
+            </tr>
+          </table>
+          
+          <div id="css_page-menu">
+            <a href="css_introduction.html">
+              <img id="arrow-left" src="../images/arrow-left_blue.png">
+            </a>
+            <a href="css_start.html">
+              <img id="menu-burger" src="../images/menu-burger_blue.png">
+            </a>
+            <a href="css_rule-sets.html">
+              <img id="arrow-right" src="../images/arrow-right_blue.png">
+            </a>
+          </div>  
+        </article>
+      </div>
+    </div>
+    
+    <footer>
+        <a href="../index.html">
+          <img id="footer-logo" 
+               src="../images/cip-footer_gray.png" 
+               alt="codeInnpixels footer logo">
+        </a>
+        <p>&copy; codeinnpixels 2016</p>
+    </footer>
+    
+    <script src="../js/jquery-2.2.3.min.js"></script>
+    <script src="../js/article_page-menu.js"></script>
+    <script src="../js/inn-footer.js"></script>
+  </body>
+</html>

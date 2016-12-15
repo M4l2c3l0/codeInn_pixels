@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML - Attributes</title>
+    <link rel="icon" 
+          href="../images/cip_favicon.gif" 
+          type="image/gif">
+    <link rel="stylesheet"
+          href="../css/header.css">
+    <link rel="stylesheet" 
+          href="../css/main.css">
+    <link rel="stylesheet"
+          href="../css/html_section.css">
+    <link rel="stylesheet"
+          href="../css/footer.css">
+    <link media="only screen 
+                 and (max-device-width: 667px)"
+          rel="stylesheet"
+          href="../css/iphone.css">
+    <link media="only screen 
+                 and (min-device-width: 668px)
+                 and (max-device-width: 1024px)"
+          rel="stylesheet"
+          href="../css/ipad.css">
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="../index.html">
+          <img src="../images/cip-rgb_s.png"
+               alt="Codeinnpixels small logo">
+        </a>
+        <a href="../blog-spot/text-editors.html">
+          <button>blog-spot</button>
+        </a>
+      </div>
+    </header>
+        
+    <div id="green-window">
+      <div id="green-window_top">
+        <h1 id="canvas-title3">HTML/ Attributes</h1>
+        <img id="window_boxes"
+             src="../images/window_buttons.png"
+             alt="window buttons image">
+      </div>
+
+      <ul class="html_selection-bar">
+        <a href="html_start.html">
+          <li>HTML</li>
+        </a>
+        <a href="html_introduction.html">
+          <li>Introduction</li>
+        </a>
+        <a href="html_elements.html">
+          <li>Elements</li>
+        </a>
+        <a href="html_attributes.html">
+          <li id="current-selection">Attributes</li>
+        </a>
+        <a href="html_void-elements.html">
+          <li>Void Elements</li>
+        </a>
+        <a href="html_display-value.html">
+          <li>Display Value</li>
+        </a>
+      </ul>
+      <article id="html_article-canvas">
+        <h2><span>Attributes</span></h2>
+        <p>
+          We now know that an HTML element is defined by generally (we will go through the exceptions on the following section) a couple of HTML tags along with the content in-between them, but as we are now about to see, some significant and rather useful alterations can be applied to it by the use of <q>attributes</q>.<br>
+          Although not always required, attributes can add very useful and specific information to elements, so much so that multiple ones are often used within a single element.
+        </p>
+        <h2><span>Syntax</span></h2>
+        <div class="code_sample">
+          <img id="img_sample" 
+               src="../images/attribute.png" 
+               alt="Structure of an attribute"
+               style="width: 48%;">
+        </div>
+        <p>
+          Attributes must always be placed inside the opening tag, separated by at least one whitespace from the tag name, and before the closing angle-bracket <code>&gt;</code>.<br>
+          Its syntax consists of its name typed in lower-case, directly followed by the <code>=</code> sign (no whitespace required), and completed by the corresponding value in-between two quotation marks <code>""</code> or <code>''</code> (whitespace also not required).<br><br>
+          In order to place additional attributes within the same tag, simply separated each one by at least one whitespace:<br>
+          <code>&lt;tag attr="value" attr="value"&gt;</code>
+        </p>
+        <h2><span>Useful Attributes</span></h2>
+        <table>
+          <tr>
+            <td>
+              <code>lang</code>
+            </td>
+            <td>
+              although not used within our html code sample, the lang attribute defines the spoken language of your document, and is placed within the opening html tag:<br>
+              <code>&lt;html&nbsp;lang="en"&gt;</code>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>id</code>
+            </td>
+            <td>
+              provides a unique id exclusively referring to that element, meaning that when using multiple ids within the same HTML document, all must be unique and cannot be given to multiple elements:<br>
+              <code>&lt;div&nbsp;id="unique-id"&gt;</code>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>class</code>
+            </td>
+            <td>
+              unlike an id, a class attribute provides an identifier that may be given to multiple elements, allowing a group of different elements sharing the same class value to be all targeted at once:<br>
+              <code>&lt;h1&nbsp;class="article1"&gt;</code><br>
+              <code>&lt;p&nbsp;class="article1"&gt;</code>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>href</code>
+            </td>
+            <td>
+              using the example of the hyperlink tag (<code>&lt;a&gt;</code>), the href attribute is what provides the url adress where the user is to be redirected upon clicking on it:<br>
+              <code>&lt;a&nbsp;href="url"&gt;</code>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>src</code>
+            </td>
+            <td>
+              the src attribute provides the directory to a document, which is to be uploaded and displayed along with the webpage:<br>
+              <code>&lt;img&nbsp;src="directory"&gt;</code>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>title</code>
+            </td>
+            <td>
+              gives a title to an element, which is displayed several seconds after placeing the mouse over it:<br>
+              <code>&lt;img&nbsp;title="description"&gt;</code>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>alt</code>
+            </td>
+            <td>
+              defines a description to an image which is displayed in case the image fails to load, and is good practise to use as it assists people with visual-impairment by spelling it:<br>
+              <code>&lt;img&nbsp;alt="this is an image"&gt;</code>
+            </td>
+          </tr>
+        </table>
+
+        <div id="html_page-menu">
+          <a href="html_elements.html">
+            <img id="arrow-left" src="../images/arrow-left.png">
+          </a>
+          <a href="html_start.html">
+            <img id="menu-burger" src="../images/menu-burger.png">
+          </a>
+          <a href="html_void-elements.html">
+            <img id="arrow-right" src="../images/arrow-right.png">
+          </a>
+        </div>
+      </article>
+    </div>
+    
+    <footer>
+        <a href="../index.html">
+          <img id="footer-logo" 
+               src="../images/cip-footer_gray.png" 
+               alt="codeInnpixels footer logo">
+        </a>
+        <p>&copy; codeinnpixels 2016</p>
+    </footer>
+    
+    <script src="../js/jquery-2.2.3.min.js"></script>
+    <script src="../js/article_page-menu.js"></script>
+    <script src="../js/inn-footer.js"></script>
+  </body>
+</html>

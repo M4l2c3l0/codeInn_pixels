@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML - Display Value</title>
+    <link rel="icon" 
+          href="../images/cip_favicon.gif" 
+          type="image/gif">
+    <link rel="stylesheet"
+          href="../css/header.css">
+    <link rel="stylesheet" 
+          href="../css/main.css">
+    <link rel="stylesheet"
+          href="../css/html_section.css">
+    <link rel="stylesheet"
+          href="../css/footer.css">
+    <link media="only screen 
+                 and (max-device-width: 667px)"
+          rel="stylesheet"
+          href="../css/iphone.css">
+    <link media="only screen 
+                 and (min-device-width: 668px)
+                 and (max-device-width: 1024px)"
+          rel="stylesheet"
+          href="../css/ipad.css">
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="../index.html">
+          <img src="../images/cip-rgb_s.png"
+               alt="Codeinnpixels small logo">
+        </a>
+        <a href="../blog-spot/text-editors.html">
+          <button>blog-spot</button>
+        </a>
+      </div>
+    </header>
+        
+    <div id="green-window">
+      <div id="green-window_top">
+        <h1 id="canvas-title5">HTML/ Display Value</h1>
+        <img id="window_boxes"
+             src="../images/window_buttons.png"
+             alt="window buttons image">
+      </div>
+      
+      <div style="clear: both;"></div>
+
+      <ul class="html_selection-bar">
+        <a href="html_start.html">
+          <li>HTML</li>
+        </a>
+        <a href="html_introduction.html">
+          <li>Introduction</li>
+        </a>
+        <a href="html_elements.html">
+          <li>Elements</li>
+        </a>
+        <a href="html_attributes.html">
+          <li>Attributes</li>
+        </a>
+        <a href="html_void-elements.html">
+          <li>Void Elements</li>
+        </a>
+        <a href="html_display-value.html">
+          <li id="current-selection">Display Value</li>
+        </a>
+      </ul>
+      <div id="modal-background">
+        <div class="modal-window">
+          <a id="close-button">
+            <img id="close" src="../images/close-button_white.png">
+          </a>
+          <h2>#TOOGOOD</h2>
+          <p>
+            Well done, you have completed the first chapter. Now that the structure of a website has no more secrets to you, let's carry on towards the next milestone: styling it.
+          </p>
+          <div>
+            <a href="css_start.html">
+              <button>CSS</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <article id="html_article-canvas">
+        <h2><span>Display Value</span></h2>
+        <p>
+          Although our view on HTML elements has mainly been focus around the code so far, let's wrap-up the HTML chapter with a different but just as important perspective on them: the layout impact.<br>
+          All elements have a <q>display value</q> which in turn has two values: <q>block</q> or <q>inline</q>, and is defined by their type (heading, paragraph, image...).<br><br>
+          So let's dive right into our last HTML section in order to understand a very important point with regards to our HTML elements' layout, and try it out on some of the elements we are now familiar with.
+        </p>
+        <h2><span>Inline vs. Block</span></h2>
+        <div class="code_sample">
+          <img id="img_sample" 
+               src="../images/block_inline.png" 
+               alt="block and inline elements image"
+               style="width: 100%;">
+        </div>
+        <p>
+          Block elements always start on a new line and unless instructed differently, will take all the available width from left to right of their parent element.<br>
+          They directly follow each other on the same vertical order than the one used on the HTML document, and shift to the left side by default (this is only visible if they are defined with a specific width and not centered as we will later see in the CSS chapter).<br>
+          A block element is also able to contain an inline element within its content, which does not work the other way around.<br><br>
+          Inline elements on the other hand do not require to start on a new line, simply following others from left to right, and can be nested inside block elements.<br> Rather than using all available width, theirs is just long enough to fit their content's length, and break down to the following line only if not enough space is available on the current one.<br>
+          Above for example, notice that the second element (first line) and the fifth (third line) carry over to the following line, for not enough space was available on their respective ones.
+        </p>
+        <h2><span>Block or Inline?</span></h2>
+        <table>
+          <tr>
+            <td>
+              <code>&lt;h1&gt; - &lt;h6&gt;</code>
+            </td>
+            <td>
+              any heading has a block value.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>&lt;p&gt;</code>
+            </td>
+            <td>
+              a paragraph has a block value.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>&lt;img&gt;</code>
+            </td>
+            <td>
+              an image has a block value.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>&lt;a&gt;</code>
+            </td>
+            <td>
+              an anchor has an inline value, often included within more text.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>&lt;input&gt;</code>
+            </td>
+            <td>
+              the input has a block value.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>&lt;div&gt;</code>
+            </td>
+            <td>
+              a div has a block value, generally used to next others within its content.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>&lt;br&gt;</code>
+            </td>
+            <td>
+              although breaking onto a new line, the line-break has an inline value as it is intended to be placed within some text.
+            </td>
+          </tr>
+        </table>
+
+        <div id="html_page-menu">
+          <a href="html_void-elements.html">
+            <img id="arrow-left" src="../images/arrow-left.png">
+          </a>
+          <a href="html_start.html">
+            <img id="menu-burger" src="../images/menu-burger.png">
+          </a>
+          <a id="modal-link"
+             href="#">
+            <img id="arrow-right" src="../images/arrow-right.png">
+          </a>
+        </div>
+      </article>
+    </div>
+    
+    <footer>
+        <a href="../index.html">
+          <img id="footer-logo" 
+               src="../images/cip-footer_gray.png" 
+               alt="codeInnpixels footer logo">
+        </a>
+        <p>&copy; codeinnpixels 2016</p>
+    </footer>
+    
+    <script src="../js/jquery-2.2.3.min.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/article_page-menu.js"></script>
+    <script src="../js/inn-footer.js"></script>
+  </body>
+</html>

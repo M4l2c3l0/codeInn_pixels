@@ -1,0 +1,248 @@
+@media screen 
+  and (orientation : landscape) {
+    
+    /*---------- INDEX ----------*/
+    
+    /*---------- HTML-SECTION ----------*/
+    
+    .html_selection-bar {
+      height: 585px;
+    }
+    
+    .html_selection-bar li {
+      font-size: 1em;
+    }
+    
+    #html_start-canvas, 
+    #html_article-canvas {
+      height: 605px;
+    }
+    
+    #html_start-canvas-title {
+      padding: 80px 0 0 20px;
+      font-size: 15em;
+    }
+    
+    #html_start-canvas p {
+      font-size: 1.7em;
+      line-height: 25px;
+    }
+    
+    #html_start-canvas button {
+      width: 200px;
+      height: 45px;
+      font-size: 1.7em;
+    }
+    
+    #modal-background {
+      padding: 300px 0 0 60px;
+    }
+    
+    .modal-window {
+      width: 680px;
+    }
+    
+    /*---------- CSS-SECTION ----------*/
+    
+    .css_selection-bar {
+      height: 615px;
+    }
+    
+    .css_selection-bar li {
+      width: 100px;
+      font-size: 1.2em;
+    }
+    
+    #css_start-canvas, 
+    #css_article-canvas {
+      height: 628px;
+    }
+    
+    #css_start-canvas img {
+      padding-top: 20px;
+      width: 500px;
+    }
+    
+    #css_start-canvas p {
+      font-size: 1.7em;
+      line-height: 25px;
+    }
+    
+    #css_start-canvas button {
+      width: 200px;
+      height: 45px;
+      font-size: 1.7em;
+    }
+    
+    /*---------- BLOG-SPOT ----------*/
+    
+    .art-imgs h4 {
+      font-size: 18px;
+    }
+    
+    .art-imgs p {
+      font-size: 13px;
+      line-height: 17px;
+    }
+    
+    #article-content {
+      padding: 50px 50px 30px;
+    }
+}
+
+@media screen 
+  and (orientation : portrait) {
+    
+    /*---------- INDEX ----------*/
+    
+    header {
+      padding: 15px 0;
+    }
+    
+    #main-container {
+      padding: 100px 0 200px;
+    }
+    
+    #main-container img {
+      margin: 100px auto 50px;
+      width: 90%;
+      max-width: 750px;
+    }
+    
+    #main-container p {
+      font-size: 1.8em;
+    }
+    
+    #main-container button {
+      margin-top: 50px;
+      width: 300px;
+      height: 70px;
+      font-size: 2.2em;
+    }
+    
+    .description-points {
+      width: 250px;
+    }
+    
+    .description-points h2 {
+      font-size: 1.5em;
+    }
+    
+    /*---------- HTML ----------*/
+    
+    .html_selection-bar {
+      height: 1090px;
+    }
+    
+    .html_selection-bar li {
+      height: 20px;
+      padding-top: 15px;
+      font-size: 1em;
+    }
+    
+    #html_start-canvas, 
+    #html_article-canvas {
+      height: 1110px;
+    }
+    
+    .start-border {
+      margin: 280px auto 0;
+    }
+    
+    #html_start-canvas-title {
+      padding: 80px 0 0 20px;
+      font-size: 15em;
+    }
+    
+    #html_start-canvas p {
+      font-size: 1.7em;
+      line-height: 25px;
+    }
+    
+    #html_start-canvas button {
+      width: 200px;
+      height: 45px;
+      font-size: 1.7em;
+    }
+    
+    #modal-background {
+      padding: 550px 0 0 60px;
+    }
+    
+    .modal-window {
+      width: 680px;
+    }
+    
+    .modal-window div {
+      position: relative;
+      top: -1px;
+    }
+    
+    /*---------- CSS-SECTION ----------*/
+    
+    .css_selection-bar {
+      height: 590px;
+    }
+    
+    .css_selection-bar li {
+      width: 95px;
+      font-size: 1.2em;
+    }
+    
+    #css_start-canvas, 
+    #css_article-canvas {
+      height: 1138px;
+    }
+    
+    #css_start-canvas img {
+      padding-top: 20px;
+      width: 500px;
+    }
+    
+    #css_start-canvas p {
+      font-size: 1.7em;
+      line-height: 25px;
+    }
+    
+    #css_start-canvas button {
+      width: 200px;
+      height: 45px;
+      font-size: 1.7em;
+    }
+    
+    /*---------- BLOG-SPOT ----------*/
+    
+    .side-bar, section {
+      height: 1200px;
+    }
+    
+    .side-bar {
+      width: 25%;
+    }
+    
+    section {
+      width: 75%;
+    }
+    
+    .art-imgs h4 {
+      font-size: 18px;
+    }
+    
+    .art-imgs p {
+      font-size: 13px;
+      line-height: 17px;
+    }
+    
+    article h1 {
+      padding: 20px;
+      font-size: 40px;
+    }
+    
+    #article-content {
+      padding: 50px 30px 30px;
+    }
+    
+    li {
+      padding: 10px 0 50px;
+    }
+}

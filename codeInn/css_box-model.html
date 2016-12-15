@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS - Box Model</title>
+    <link rel="icon" 
+          href="../images/cip_favicon.gif" 
+          type="image/gif">
+    <link rel="stylesheet"
+          href="../css/header.css">
+    <link rel="stylesheet" 
+          href="../css/main.css">
+    <link rel="stylesheet"
+          href="../css/css_section.css">
+    <link rel="stylesheet"
+          href="../css/footer.css">
+    <link media="only screen 
+                 and (max-device-width: 667px)"
+          rel="stylesheet"
+          href="../css/iphone.css">
+    <link media="only screen 
+                 and (min-device-width: 668px)
+                 and (max-device-width: 1024px)"
+          rel="stylesheet"
+          href="../css/ipad.css">
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="../index.html">
+          <img src="../images/cip-rgb_s.png"
+               alt="Codeinnpixels small logo">
+        </a>
+        <a href="../blog-spot/text-editors.html">
+          <button>blog-spot</button>
+        </a>
+      </div>
+    </header>
+    
+    <div style="clear: both;"></div>
+   
+    <div id="grey-window">
+      <div id="buttons-menu-container">
+        <img src="../images/new_window_buttons.png"
+             id="window_buttons">
+        <ul class="css_selection-bar">
+          <a href="css_start.html">
+            <li>CSS</li>
+          </a>
+          <a href="css_introduction.html">
+            <li>Introduction</li>
+          </a>
+          <a href="css_html+css.html">
+            <li>HTML + CSS</li>
+          </a>
+          <a href="css_rule-sets.html">
+            <li>Rule Sets</li>
+          </a>
+          <a href="css_declarations.html">
+            <li>Declarations</li>
+          </a>
+          <a href="css_box-model.html">
+            <li id="current-selection">Box Model</li>
+          </a>
+        </ul>
+      </div>
+      <div id="canvas-container">
+        <h1>CSS/ Box Model</h1>
+        <div id="modal-background">
+          <div class="modal-window">
+            <a id="close-button">
+              <img id="close" src="../images/close-button_white.png">
+            </a>
+            <h2>#NAILEDIT</h2>
+            <p>
+              Congratulations, you have completed all available chapters, but stay tuned for more!<br>
+              Do also check out the blog-spot section where you will find useful additional information.
+            </p>
+            <div>
+              <a href="../blog-spot/text-editors.html">
+                <button>blog-spot</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <article id="css_article-canvas">
+          <h2>Box Model</h2>
+          <div class="code_sample">
+            <img id="img_sample"
+                 src="../images/box-model.png"
+                 alt="Box model overview"
+                 style="width:45%;">
+          </div>
+          <p>
+            Although we have mentioned about padding, borders and margins before, it was still unclear just as to how exactly it fitted in with an element. Well, to clarify that, let me now introduce you to the <q>box model</q>.<br>
+            Not only do elements behave like inline or block elements as seen on the last section of the HTML chapter, they are like boxes from a styling perspective.<br><br>
+            At the very core, you have the element's content, whose window is just big enough to contain it.<br><br>
+            Following, you find the layer of padding wrapped all arround the content and before the border. If any colour is defined for the element's background, the padding too will be coloured.<br><br>
+            Then comes the border, which as you see does not only contain the element's content, but also it's padding. When placing elements on the same line, remember that the border too has to be accounted for when calculating their width and height.<br><br>
+            Last and certainly not least comes the margin. Remember that the margin is purely intended to create transparent gaps between the element (from its border) and the surrounding ones.<br>
+            If two elements next to each other have the same margin against each other (ie one has a bottom margin of 10px and the one below a top margin of the same value), the gap between them will be of 10px and not 20px. In fact margins do not add to one another but simply merge, and if the two have different values, the bigger one will be applied.<br><br>
+            So there you have it. Understanding this idea is key to a better control over the element's layout and behavior, so before ending the chapter, let's practise over a few examples.
+          </p>
+          <h2>Example 1</h2>
+            <img class="bm-examples"
+                 src="../images/bm-example1.png"
+                 alt="First example of box model">
+          <p>
+            Here we have two child elements and their parent container.<br>
+            Right away we see that the parent container was given the id <q>main-container</q> (remember: an id selector starts with <code>#</code>), and its style declarations are quite basic, simply giving it an hexadecimal grey colour and an all around even border.<br><br>
+            Its first child too was given an id. It is recommended that ids are as descriptive as possible to better understand the CSS code and  what the targeted element is.<br>
+            From the layout perspective, the element does not start right at the top of its parent (the standard position), which is explained by the transparent gap given to its <code>margin-top</code>. Because no width was specified, it therefore fully extends from side to side by default.<br>
+            It was also given a red colour via an <code>rgb</code> value, and a <code>border-radius</code> one that we have not seen before, but which rounds an element's corners accordingly to the value provided.<br><br>
+            A class name (the <code>.</code> before the name) is used to select the second child.<br>
+            Its width was defined to 70% of its parent's, and although it should default the child to the parent's left, the <code>margin</code> was set to keep it centered.<br>
+            Although impossible to see in this scenario, some padding was added to its top and bottom, meaning that the element is higher that it would have been originally, along with a green colour via another <code>rgb</code> value, and a defined all-round dashed border.<br><br>
+            Not that hard is it? Let's try another one.
+          </p>
+          <h2>Example 2</h2>
+          <img class="bm-examples"
+                 src="../images/bm-example2.png"
+                 alt="Second example of box model">
+          <p>
+            In the second and third example, we will not go through the main container as its declarations would have been pretty much the same as for the previous, except for the border. You should however know that unless declared with a specific height, a parent element's height is always big enough to contain and wrap within it all of its children ones.<br><br>
+            So in this example, there are two levels of nesting, as <code>#child1</code> also became a container, being itself nested within the main one.<br>
+            The height of <code>#child1</code> has a fixed value, its colour set to red by using a keyword for value, and its margin set to 10px on each side, explaining the gap on each side in relation to its parent container.<br><br>
+            Within it, we find a single child on the top left corner, with a green color defined via an hexadecimal value. As <code>.greenChildren</code> has a defined width, and since it's margin was not declared for it to be centered, it is defaulted to that position (remember that unless indicated differently, child elements start at the top left corner of their parent).<br><br>
+            Getting the hand of it? Let's try one last one, easier this time.
+          </p>
+          <h2>Example 3</h2>
+          <img class="bm-examples"
+                 src="../images/bm-example3.png"
+                 alt="Third example of box model">
+          <p>
+            For this last example, we have a single child within the main container element.<br>
+            The child has once again been given a red colour via an <code>rgb</code> value, as well as a specified height.<br>
+            This time however, it's border was only defined on the left hand side, leaving the other three without any.<br>
+            Finally, it's uneven position is due to the uneven values provided to its margin property, whithout which, it would cover all of its parent's width, as well as its height (if none was defined for the parent-container that is). 
+          </p>
+          <div id="css_page-menu">
+            <a href="css_declarations.html">
+              <img id="arrow-left"
+                   src="../images/arrow-left_blue.png">
+            </a>
+            <a href="css_start.html">
+              <img id="menu-burger"
+                   src="../images/menu-burger_blue.png">
+            </a>
+            <a id="modal-link"
+               href="#">
+              <img id="arrow-right"
+                   src="../images/arrow-right_blue.png">
+            </a>
+          </div>  
+        </article>
+      </div>
+    </div>
+    
+    <div style="clear:both"></div>
+    
+    <footer>
+        <a href="../index.html">
+          <img id="footer-logo" 
+               src="../images/cip-footer_gray.png" 
+               alt="codeInnpixels footer logo">
+        </a>
+        <p>&copy; codeinnpixels 2016</p>
+    </footer>
+    
+    <script src="../js/jquery-2.2.3.min.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/article_page-menu.js"></script>
+    <script src="../js/inn-footer.js"></script>
+  </body>
+</html>

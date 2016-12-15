@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML - Introduction</title>
+    <link rel="icon" 
+          href="../images/cip_favicon.gif" 
+          type="image/gif">
+    <link rel="stylesheet"
+          href="../css/header.css">
+    <link rel="stylesheet" 
+          href="../css/main.css">
+    <link rel="stylesheet"
+          href="../css/html_section.css">
+    <link rel="stylesheet"
+          href="../css/footer.css">
+    <link media="only screen 
+                 and (max-device-width: 667px)"
+          rel="stylesheet"
+          href="../css/iphone.css">
+    <link media="only screen 
+                 and (min-device-width: 668px)
+                 and (max-device-width: 1024px)"
+          rel="stylesheet"
+          href="../css/ipad.css">
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="../index.html">
+          <img src="../images/cip-rgb_s.png"
+               alt="Codeinnpixels small logo">
+        </a>
+        <a href="../blog-spot/text-editors.html">
+          <button>blog-spot</button>
+        </a>
+      </div>
+    </header>
+    
+    <div id="green-window">
+      <div id="green-window_top">
+        <h1 id="canvas-title1">HTML/ HyperText Markup Language</h1>
+        <img id="window_boxes"
+             src="../images/window_buttons.png"
+             alt="window buttons image">
+      </div>
+
+      <ul class="html_selection-bar">
+        <a href="html_start.html">
+          <li>HTML</li>
+        </a>
+        <a href="html_introduction.html">
+          <li id="current-selection">Introduction</li>
+        </a>
+        <a href="html_elements.html">
+          <li>Elements</li>
+        </a>
+        <a href="html_attributes.html">
+          <li>Attributes</li>
+        </a>
+        <a href="html_void-elements.html">
+          <li>Void Elements</li>
+        </a>
+        <a href="html_display-value.html">
+          <li>Display Value</li>
+        </a>
+      </ul>
+      <article id="html_article-canvas">
+        <h2><span>A Bit Of History</span></h2>
+        <p>
+          Imagined by the mind of physicist Tim Berners-Lee in his ENQUIRE communication system (described as the predecessor to the World Wide Web) for CERN researchers where he worked as a contractor in the 80s, HTML soon became a standard for webpage creation since its release in the early 90s.<br>
+          In a nutshell, HTML is used to create a webpage's structure by the use of <q>markup tags</q> (or HTML tags here), which are then read, interpreted, and displayed by the web browser. Consequently, HTML is regarded as a markup language rather than a programming one.<br>
+          Following several new versions throughout the years, the HTML5 release was official made in 2014, and is to date the most recent update.
+        </p>
+        <h2><span>First Impression</span></h2>
+        <div class="code_sample" style="text-align:left;">
+          <code>
+            &lt;!doctype html&gt;<br>
+            &lt;html&gt;<br>
+            &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Page Title&lt;/title&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Big Heading&lt;/h1&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+            &lt;/html&gt;
+          </code>
+        </div>
+        <p>
+          Simply put, HTML files are text files completed by the <code>.html</code> extension, consisting of a list of HTML markup tags.<br>
+          As shown above, an HTML tag is made of a specific keyword or letter defining its type (title, heading, paragraph, ...), wrapped by two angle brackets <code style="color:#fff;">&lt;&gt;</code>, and in most cases followed by its exact copy with an extra <code>/</code> before its name.<br>
+          As we are about to find out in more detail, the combination of both tags forms an HTML <q>element</q>.
+        </p>
+
+        <div id="html_page-menu">
+          <a href="html_start.html">
+            <img id="arrow-left" src="../images/arrow-left.png">
+          </a>
+          <a href="html_start.html">
+            <img id="menu-burger" src="../images/menu-burger.png">
+          </a>
+          <a href="html_elements.html">
+            <img id="arrow-right" src="../images/arrow-right.png">
+          </a>
+        </div>  
+      </article>
+    </div>
+    
+    <footer>
+        <a href="../index.html">
+          <img id="footer-logo" 
+               src="../images/cip-footer_gray.png" 
+               alt="codeInnpixels footer logo">
+        </a>
+        <p>&copy; codeinnpixels 2016</p>
+    </footer>
+    
+    <script src="../js/jquery-2.2.3.min.js"></script>
+    <script src="../js/article_page-menu.js"></script>
+    <script src="../js/inn-footer.js"></script>
+  </body>
+</html>
